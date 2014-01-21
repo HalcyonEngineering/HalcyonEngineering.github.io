@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="icon" 
+      type="image/png" 
+      href="./images/h.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Halcyon Eng. by HalcyonEngineering</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/HalcyonEngineering">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Halcyon Eng. (Team 15)</h1>
+          <p>Minutes Records</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/HalcyonEngineering">HalcyonEngineering</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h3>
+
+<p>Client MEETING 1</p>  
+<p>Date of Meeting: 2014-01-20</p>
+<p>Duration Time: 12:00 – 1:30 PM</p>
+<p>List of Attendees: Andy, David, Phattrick, Kenneth, Matthew, Jon</p> 
+<p>Meeting Location/Communication Medium Used: ICCS Room 104</p> 
+</code></pre>
+<pre><code>
+	Meeting began with discussion of the history of Pitch’n. Client wanted to see 
+what we know regarding their company. David read through the given information of 
+the company given to us in lecture. 
+</code></pre>
+<pre><code>
+TWO BIG PROBLEMS:
+
+1)	Organizers can’t find volunteers with specific skills
+2)	Management of volunteers to give them information and notify them. You would 
+need to be able to import data into your system (usually CSV). Parsers mainly 
+target for CSV. 
+</code></pre>
+<pre><code>
+Pitch’n Current System:
+
+	Pitch’n is a system used to find volunteer opportunities based on volunteer
+qualification and interest.  What they need is a management system. Currently,
+management has been done by excel, printed paper spreadsheet and a contacts list
+is stored much like in the Outlook format. PHP is used for the programming and
+CVS format is used for the database.  
+</code></pre>
+<pre><code>
+System Requirements for Volunteers: 
+
+-	Volunteer system has to be able to display and manage parsed individual
+registered volunteer info from Pitch’n database for volunteer profiles. 
+-	Volunteer users must be given access to a dash board that allows the
+volunteer to see  “on boarding process” steps once they’ve accepted a
+volunteering role (ex. introduce who is the volunteer coordinator) 
+-	Volunteer must be able to see documents regarding the volunteer position
+information with the system. System must be able to share this document to all
+associating volunteers so that it can easily and quickly shared online without
+need of manual distribution to each volunteer.
+-	The volunteer emails would be used as the main identifier for each
+volunteer so if they use their email for another volunteer group, this
+information can be linked.
+-	 Volunteer should be able to check out task lists once they are complete so
+that it is easier for the manager to see what is done.
+-	When a task is complete by a volunteer, it is better that a notification can
+be sent to the volunteer coordinator so that they can double check and review
+your work. 
+-	Volunteers need to be able to see a list of tasks they are registered to do.
+-	Dashboard design would be targeted towards the volunteer.
+-	Note that volunteer should NOT have access to progress reports though they
+can have small notifications.
+-	Volunteer signup information can be access on the Pitch’n site.
+So login to the system and display has to be able to work with that.
+</code></pre>
+<pre><code>
+System Requirements for Organization Coordinators: 
+
+-	Simple sign-up for organizations: Org Name, email, password. There should be a registration
+feature for people without accounts. 
+-	 Each associating organization needs functionality in the system that can search registered
+volunteers in the database by filtering by fields. Example of fields that are filterable 
+include: skill, location, availability, and projects that they are associated with (who do we
+have that is working on project A, B, C). It can be said that the most important system 
+feature is figuring out how to manage a big database of 1400 people in BC Vancouver alone.How
+to find someone with a specific skill set? (ex. Find people with accounting abilities that is
+available on Saturdays in the Vancouver areas)  
+-	Pitch’n needs a solution that allows volunteer coordinators to find another available
+volunteer efficiently and notify them when another volunteer can’t or does not go to their
+assigned work shift. This feature would also require volunteer to reply confirmation. 
+-	The system needs to be able to provide scheduling by seeing which volunteer is available
+and schedule them with a notification. 
+-	Volunteer coordinators need to be able to see a list of newly applied volunteers or
+volunteers that meets their requirements or ones currently volunteering for them that they
+need check. 
+-	Volunteer managers need to know and be updated on what is going on with events or
+assigned tasks so that there needs to be an organized task list display.
+-	The system should also have a statistical manager that can graph and show volunteer
+efficiency and etc that should only be accessible by the associating organization coordinator.
+-	Possible features that would be useful for these organizations would be easy import of
+volunteer information to the system.
+-	Ideas are requested for some sort of way for project management in regards to estimating
+time commitment on assigned tasks for volunteers.  
+</code></pre>  
+<pre><code>
+General System Requirements: 
+
+-	On the dash board, users must be greeted by a welcome message upon entry
+-	Communication notifications like the ones on facebook. They want to keep messaging in
+the system rather by email so that it can be all safely stored in the system and is well
+organized to access. 
+-	This program shouldn’t be something that the users have to install in order to use but is
+available to use directly on their company site. 
+-	This system is going to be the cloud system. 
+-	Documents and messaging regarding a specific project should not be placed on the home
+dash board but only displayed when selected to avoid clutter.
+-	Usability is crucial but not too dumb down as well.
+-	System focus should be on the volunteer organization. The system in general should
+be a tool target towards the organizations. 
+-	Communication should be able to go between volunteers and also organizers so that
+it is “All-Way”. In terms of contact from volunteer to organizers, the volunteers
+should be only be able to contact the volunteer organize coordinates. 
+-	Each volunteer profile can be linked and removed from organizations. 
+-	It would be great if this system can be sync to a mobile device. It doesn’t have to be fully
+functional but has to be able to able to access information (could be mobile app, ipad app etc).
+Mobile functionalities includes being able to search volunteers and filter them on the go and
+see reports. 
+-	In terms of the database, it is open to ideas; however it would be easier if it’s stored in
+the Pitch’n main database. Security is VERY IMPORTANT as it protects many personal information.
+Most of their app building is done on AWS server. Sean has agreed to ask Jason what is the
+existing database so we can build it the same way. 
+</code></pre>
+<pre><code>
+Summary Main Parts of the System:
+
+1)	 Volunteer Database - need system to add or import volunteers to them, they would need
+to be able to search and filter for volunteers. 
+2)	Messaging for in case when someone can’t show up or in need of contact.
+3)	Document sharing for the project as whole is also needed so that the organization does
+not need to use outside emails as a way of commutation.  
+4)	There should be a setting for daily digest for users to check out their user profiles.
+Weekly reviews are also a possible idea to do.  
+Programming Preferences for System: 
+Up to now, the system is developed in PHP. However node, ruby and server side java script
+is also fine. First preference would be PHP just so that it can be compatible with the
+existing system. 
+</code></pre>
+<pre><code>
+What Pitch’n will see as determining factors in Project Selection:
+
+Priorities for selecting the project:
+
+1)	Usability – fun and easy to use , auto-animate functionality, how easy it is to find a
+specific volunteer, good and fast data management , manage volunteers by assigning tasks to
+them, document sharing between volunteers in a common task. Scheduling the volunteers and
+reporting is also nice but optional. Communication is focused on specialized messaging but
+how the messaging actually work is preferred if it is in system. (think CRM) 
+2)	Backend – code will be looked at
+3)	Design – you can look for references from the current site, buttons,
+(specs available on request) 
+</code></pre>
+<pre><code>
+Systems Pitch’n looked at for reference: 
+
+1)	Kin HR 
+2)	Volunteer2 – made in Ontario (their biggest competitors, but they are expensive and it
+looks confusing due to overwhelming functionalities. Suggestion to visit their site and
+videos) 
+3)	Catchafire 
+4)	Linkedin – Linkedin is building their own system as well. It is also suggested that we
+provide integration to Linkedin. 
+One of the biggest problems for volunteer organization is making sure people show up and
+train them so that they can work. Kin HR is an example of software that Pitch’n is looking
+at that can register volunteer information and provide them in return with volunteer work
+information. With the early provided information, it allows volunteers to be quickly updated
+with volunteer work information beforehand before their required work period to save the
+organization time on volunteer training.
+</code></pre>
+<pre><code>
+What kind of licensing, is the code going to be released under?
+
+-	Probably open –source 
+-	GPL  
+-	Sean will get back to us regarding this. If you have an input as to what to do,
+you can send him an email. Main source of contact is Sean. IF you have technical questions,
+it is preferred that questions are asked before planned meetings so that he can research
+beforehand. 
+</code></pre>
+
+
+<p><a href="MinutesRecords.html">Back to Minutes Documentation List </a></p>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
