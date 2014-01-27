@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="icon" 
+      type="image/png" 
+      href="./images/h.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Halcyon Eng. by HalcyonEngineering</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/HalcyonEngineering">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Halcyon Eng. (Team 15)</h1>
+          <p>Minutes Records</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/HalcyonEngineering">HalcyonEngineering</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h3>
+
+<h2><p>Client MEETING 2</p>  
+<p>Date of Meeting: 2014-01-27</p>
+<p>Duration Time: 12:00 – 1:30 PM</p>
+<p>List of Attendees: Andy, David, Phattrick, Kenneth, Matthew, Jon</p> 
+<p>Meeting Location/Communication Medium Used: ICCS Room X237</p></h2> 
+</code></pre>
+<pre><code>Detail Response from Client regarding Email Questions:
+
+-	Interface design can be based of Kin HR as an ideal
+-	Start fresh and don’t worry about integration with PHP and the existing
+system. However Sean does suggest that we use PHP.  
+-	BSD is what we are going to go with the licensing. 
+-	If we decide to use any messaging services or databases? They are currently
+using AWS. Think of the project as a stand-alone service so create your own
+testing database and don’t worry about the integration. 
+-	We are set on using email as volunteer identification 
+</code></pre>
+<pre><code>System Features 
+
+-	Fields for the organizers in their sign up input are available on the Pitch’n
+cite (title, phone number, social media fields, roles, etc). The registration is
+going to be handled by the Pitch’n so we don’t have to worry too much about registration.
+After they have finished the registration, they’ll then access our designed system.
+In summary, the registration does not need to be handled by our team but we need to
+setup a login with email and password (Ex. Test@Test.com with a password).
+-	 You’ll need 3 different logins, for volunteer, organizer users, Pitch’n admin.
+Thus for the dashboard after login, there needs to be 3 different views. The layout
+of the login will be the same. The layout for the dashboard could be similar with
+restriction of functionalities. A possible solution in managing the system for multiple
+user views could have multiple tabs for each user type view for the same Email account. 
+-	Password forgotten, standard solution, set email notification for password reset. 
+</code></pre>
+<pre><code>Database Management 
+
+-	When you go to the team view page, you can browse by skill, by location, by project
+(chose filters by choosing a drop down).  
+-	There should also be a general search field (for example, you can search by name)
+-	Filter search can be performed by a list of drop downs. 
+-	Start simple for now 
+-	The search result should be a list of volunteer users with a checkbox for each user
+that once selected, you can chose a specific action to the selected portion of the list
+-	You can also SAVE PRE-LOADED Filter list for the user so that it can be quickly
+selected and action performed. 
+-	There should be options to save frequently searched items, to save long time users
+with excessive amounts of “clicks”
+-	The system should be centred around the volunteers 
+-	Projects are treated as folder – (volunteers can be view based on project and can
+access or receive different information) 
+</code></pre>
+<pre><code>Landing Page for the Organization Coordinators: 
+
+-	They should be able to see the “Status” of all their projects 
+(percent completion for the project.  Number of volunteers, project on
+schedule (is there on time, things that need to be reviewed). These status
+updates will be updated by the volunteers that are part of the associating
+projects. This will reflect on the completion of tasks by the volunteers 
+-	They can see new notifications
+-	Any actions that needs to be completed for the project
+-	List of coming milestones or dates
+-	List of tasks to complete  
+-	Messages waiting approval 
+</code></pre>
+<pre><code>Features for the System
+
+-	Uploading CSV for bulk data. There could be volunteers in the list that are no
+longer active, so that each volunteers should be sent with the email notification
+for their confirmation on agreeing to be active in the system that their organizers
+have added them to. Once they confirmed, send them an associating generated password
+for their email for login. They can then go into their account later and change their
+passwords. If they don’t reply for 2 weeks, they will be remove from the system and
+would have to re-apply.  
+-	Upload manually individually option available. You should be able to assign the
+volunteers as you add them into the system. 
+-	 Assign “ALL” volunteers to a certain project (should be multiple select) 
+-	Remove volunteer - can be done both by the volunteer and the organizations.
+Removal organizations should be notified by email.  Associating note can be added
+in the email on confirmation of volunteer removal. 
+-	Remove organization.  
+-	Admin should also be able to do this and notification should be the same by
+email with note attached. 
+-	Minimal deliverable with CSV template 
+</code></pre>  
+<pre><code>Volunteer Landing Page
+
+-	Minimal information 
+-	What projects are they working on 
+-	Projects they are working with 
+-	Leaving a project or organization 
+-	Schedule 
+-	Communication 
+-	Confirmation of tasks complete to sent to organizer account to be review
+(can be done by check box) 
+-	Should be able to change the password for the email 
+-	Notification each project  update (on-boarding will be a notification by
+default to the project 
+
+</code></pre>
+<pre><code>Filtering and finding volunteers  
+
+-	Search by tags, volunteer organization can set up by tags 
+(tags for now are optional, we can have set fields for now) 
+
+</code></pre>
+<pre><code>What is a project?
+
+-	It’s a folder
+-	Organization 
+-	Project name
+-	List of Projects Role
+-	Multiple Volunteers per Role 
+-	Each Role can have multiple tasks
+-	Role assignment is done mostly but coordinators based on
+skills available  in each volunteer 
+</code></pre>
+<pre><code>Data Structure: 
+
+-	Org -> Proj -> Role -> Task, number, of volunteers
+-	Under each Role – role number, title, description, amount of
+volunteers, timeline, deliverables, task list
+
+On-Boarding 
+
+-	On boarding page for every project 
+-	No PDF handing out for on-boarding, use that for mainly document handout
+
+</code></pre>
+Follow up: 10 AM Tuesday Jan 28th David will be meeting with Sean
+<p><a href="index.html">Back to Homepage </a></p>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
