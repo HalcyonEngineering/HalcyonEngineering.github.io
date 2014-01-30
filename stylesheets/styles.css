@@ -551,9 +551,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #e8e8e8;
+  color: #FFFFFF;
   margin: 0 0 10px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:'Calibri', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -566,11 +566,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 65px;
 }
 
 h4, h5, h6 {
