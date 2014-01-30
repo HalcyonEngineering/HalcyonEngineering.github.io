@@ -569,12 +569,14 @@ h1 {
   font-size: 30px;
 }
 
-h2 {
+h6 {
+   color: #FFFFFF;
   font-size: 65px;
+  line-height: 1.1;
 }
 
-h4, h5, h6 {
-  color: #e8e8e8;
+h2, h5, h6 {
+   color: #FFFFFF;
 }
 
 h3 {
