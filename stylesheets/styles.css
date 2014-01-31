@@ -579,8 +579,10 @@ h6 {
   max-height: 80px;
 }
 
-h2, h5, h6 {
-   color: #FFFFFF;
+ h5 {
+   color: #C8C8C8;
+   font-size: 29px;
+  max-height: 30px;
 }
 
 h3 {
