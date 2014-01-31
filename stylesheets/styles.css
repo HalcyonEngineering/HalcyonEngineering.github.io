@@ -562,18 +562,21 @@ p, ul, ol, table, pre, dl {
   margin: 0 0 20px;
 }
 
-h1, h2, h3 {
-  line-height: 1.1;
+h1, h3 {
+  line-height: 20px;
+  max-height: 20px;
 }
 
 h1 {
   font-size: 30px;
+  max-height: 30px;
 }
 
 h6 {
    color: #FFFFFF;
   font-size: 65px;
-  line-height: 1.1;
+  line-height: 80px;
+  max-height: 80px;
 }
 
 h2, h5, h6 {
