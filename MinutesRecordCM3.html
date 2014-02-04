@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="icon" 
+      type="image/png" 
+      href="./images/h.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Halcyon Eng. by HalcyonEngineering</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Halcyon Eng. (Team 15)</h1>
+          <p>Minutes Records</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/HalcyonEngineering">HalcyonEngineering</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+    
+
+<h2><p>Client MEETING 3</p>  
+<p>Date of Meeting: 2014-02-03</p>
+<p>Duration Time: 12:00 – 1:00 PM</p>
+<p>List of Attendees: Andy, David, Phattrick, Kenneth, Matthew, Jon</p> 
+<p>Meeting Location/Communication Medium Used: ICCS Room X237</p></h2> 
+</code></pre>
+<pre><code>Manager Work Flow
+
+-	The system should be targeted to “smaller” organization so that
+list of projects would be smaller
+-	Consider putting project update information on the main dashboard. 
+</code></pre>
+<pre><code>Administrator Functionality 
+
+-	Control to edit account information
+-	Control to add/remove accounts from system 
+-	 Deactivate/ Delete/Edit Organizations and Projects
+-	Changes made to a user account would be notified to user by notice sent
+to the associated user email. 
+-	Login in to account for troubleshooting 
+-	View uploaded files and chose to edit 
+</code></pre>
+<pre><code>User Characteristics
+
+-	Assume limited computational skills in volunteer and manager users
+-	admin is Sean and some volunteers with some degree of computing skills
+</code></pre>
+<pre><code>Changes Cut-off date
+
+-	Sean has read over Matt’s section and has agreed to the constraints of
+the cut-off dates
+</code></pre>
+<pre><code>Specific Requirements: Manager 
+
+-	Login - provide email/password + confirm click, repeated incorrect login
+and security question, reset password.
+-	Import CSV – the system must be able to provide option for existing CSV
+template transfer. Also need to manually add data into the database. The
+improvement is to upload CSV is template like Mail Chimp. There will be no
+update CSV option. Duplication handing for ignoring duplicates for duplicate
+accounts.    
+-	Add/remove volunteers – access a list of volunteers and add them to a
+selected project, remove by selection and secondary confirmation.
+-	 Filter Search volunteers - Five fields: names, projects, skill sets,
+availability and location by city. Actions then could be performed on the
+result list. Search fields will be down by drop down selection.
+(availability minimal: weekends, weekdays, evening, evening + weekends, 
+any time (there will be 4 check boxes for a total of 16 combinations))  
+-	Task/Roles – You have to have an existing project to have roles, roles to
+have tasks (strict hierarchy). Roles can be edited after assignment.
+-	Assigning roles – Start with list of volunteers, you have option to assign
+all (Note* there is NO project assignment, but only assignment to roles,
+volunteer accounts in the system by default should be a part of an organization).
+Roles should also include general role position.   
+-	Managing cloud documents to project teams – modifiable by projects (min),
+set visibility depending on roles (optional), repository for the ENTIRE
+organization is also necessary (option).  Organization level, Project level,
+Individual Level (optional, Project level sharing is min). Uploading documents
+with the same name would be given a re-naming option or confirmation.   
+-	On-boarding page setup based on role – Template page setup (min) for entering
+information. Template will have welcome “name`”, links to files, contact info etc. 
+-	Email messaging system – find volunteers and email all (min), in system
+messaging system like Facebook (optional). Messaging + notification between 
+managers to volunteers. 
+-	Notification system
+-	Calendar – it provides a better overview of the schedule by date (optional,
+since most functionality is going to be redundant) provide list of available
+volunteers and assign them with notification.
+
+</code></pre>  
+<pre><code>Specific Requirements: Volunteer 
+
+-	Same login as other accounts
+-	Update user name + password
+-	Tasks list
+-	New icon notification 
+-	Project page with on boarding, document repository 
+-	On-boarding is the result of the template made by manager 
+-	Contact information and document link 
+-	Files can be downloaded
+-	Role based, documents can be restricted access
+-	Volunteers cannot upload doc and is notified by email
+-	Task list notification types: complete verified, complete pending 
+and in-progress
+-	Notification systems: new task, change in deadlines, change in task/projects,
+on coming deadlines and new messages
+-	Volunteers can message managers and other in project volunteers (email min)
+In system like FB would preferred  
+</code></pre>
+<pre><code>Availability in Existing Pitch’n System
+
+-	Currently done by drop-down selection for available times
+</code></pre>
+<pre><code>Security 
+
+-	PHP side only, web server so security coverage on our side is limited
+-	Passwords security: they will be hashed and salted, never stored in plain 
+-	Document sharing, restricting access to documents can’t access via directly by web. 
+</code></pre>
+Follow up: Meeting with TA on Wednesday in room X235 at 12:00-1:00 PM.  
+<p><a href="index.html">Back to Homepage </a></p>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
