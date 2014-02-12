@@ -654,7 +654,7 @@ code {
 
 pre {
   padding: 8px 15px;
-  background-color:hsla(120,100%,0%,0.6);
+  background-color:hsla(120,100%,0%,0.55);
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
