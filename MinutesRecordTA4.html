@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+  <head>
+   <link rel="icon" 
+      type="image/png" 
+      href="./images/h.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Halcyon Eng. by HalcyonEngineering</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+    
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Halcyon Eng. (Team 15)</h1>
+          <p>Minutes Records</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/HalcyonEngineering">HalcyonEngineering</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+       
+
+<h2><p>TA MEETING 4</p>  
+<p>Date of Meeting: 2014-02-12</p>
+<p>Duration Time: 12:00 – 1:00 Noon </p>
+<p>List of Attendees: Andy, David, Phattrick, Kenneth, Matthew, Jon</p> 
+<p>Meeting Location/Communication Medium Used: ICCS X239</p></h2>
+
+<pre><code>Programming Practices
+
+-	TA suggest that when programming, only talk to each other if there is work 
+related discussion, otherwise sit and work separately 
+-	He notes that working alone at home and using phone/Skype is good for 
+coding because it prevents distraction. (Team considers this method to save
+travel time) 
+</code></pre>
+
+<pre><code>Design Phase – Design Document Details
+ 
+-	TA looked at our High level architecture conceptual diagram and our security
+view diagram 
+-	He suggests that: a diagram for system classes and the diagram needs to be
+done before coding starts and it gives the TA a look of what goes on. He wants a
+complete ER diagram, mock ups or best choice would be a class diagram. 
+-	Class diagram would show interactions and will “sort of” cover section 4
+-	 TA says at this point, we should think about coding 
+-	High level structures such as database design and etc should all go into section 4. 
+-	In section 3 you are not going into specifics but say why you are doing things
+in a certain way relating to high level design. 
+-	Low level class diagrams for each module that are independent could go into
+section 5.1. From this, each sub-programming team could code each module.
+-	Security, ER, High Level diagrams for section 4. 
+</code></pre>
+
+<pre><code>Scrum Meeting 
+
+-	Identify Input and Output of Modules assigned. TA notes that these descriptions
+could also go into section 5.1. There are NO specific rules as to what can go into
+these sections as long as they are relevant. This is good to have before coding. 
+
+</code></pre>
+
+<pre><code>SRS – TA walkthrough
+
+-	Introduction – You said that there is confusion to open source product? 
+This is what the client wanted? TA: Whatever your application is, your client
+is NOT making that available as an open source project. TEAM: Client wants to
+\have a free version to give out and will update a version for himself if he
+decides the system to go commercial. TA: He wants you to use tools that are open
+source so that it’ll be commercial? What this line means to me, is that if you set
+it up as an open source code, you are putting it online so that people can download
+it and setup using it their OWN server. From the TA’s understanding, we are supposed
+to make software just for private use of the client. So whatever you write can be in
+the BST licence but as long you use tools under BST licence. It doesn’t have to be
+open source. Open source here is NOT a requirement. Making it open source is decided
+after we give our software to him. Add more explanation in the SRS as to why something
+has to be open source. 
+
+-	TA suggests that we REMOVE the sentence regarding open-source since it won’t
+affect the rest of the SRS and it’ll have consequences on the software requirements. 
+
+-	Jon has commented on a section that has an awkward sentences that needs to be 
+reworded
+
+-	Section 2 is for the client, must make explicit
+
+-	Your application IS dependant of CSV data formats. Reword that in the SRS. 
+
+-	Function Diagrams update: visual presentation rework, flow chart from up from
+down (however don’t spend too much time on it) 
+
+-	The role of administrators: mention that these are more support staff and not
+system admins, make clear that they don’t have direct DB access. Also change the
+definitions of administrator. 
+
+-	TA asks: Is there NO user registration page? Team explains: Registration is done
+on Pitch’n’s end. We will be working with test data, when we give the product then
+they’ll have read user data. We’ll just have test user accounts. Client says we don’t
+have to worry about integration with their existing system. TA: This is more of a
+question. Seems a bit dodgy. WE WILL MAKE IT MORE CLEAR
+
+-	Kurt needs to decide if BST is okay for UBC Students. TA will email Kurt and
+update us with that later. 
+
+-	TA: Performance Requirements: Which operations may take longer? TA appreciates
+that the section is broken into two points. He doesn’t want us to give numbers
+(1 sec/ 10 sec) if they don’t mean anything. He wants numbers if they are results of
+test and can show evidence with test results that can show numbers. David: Is there
+a way to avoid that? No numbers no need for tests? TA: You can write down anything
+as long as you have it tested. Basically you need to get requirements from the client.
+If none is given, DEFINE the general requirements that you are using. If there are
+slight changes to the numbers later on it’s fine. You should write how it would
+generally perform, what takes long, what is fast, how to test. While you are implementing
+make sure that these values are tested. Test the longest/shortest operations during
+implementation. ANYTHING YOU WRITE DOWN NEEDS TO BE TESTABLE. Note that testing time
+for this course is limited. Don’t put don’t arbitrary numbers. It is better if you
+DO NOT put numbers if you don’t have testable numbers. Talk about how some queries
+can take longer.  
+
+-	Since we don’t have any testable numbers, don’t put numbers in the SRS, but we
+can give rough estimated ranges.  
+
+-	In the SRS mention EXACTLY what you want to do in the SRS. No random values! 
+
+-	 At least specify what operation is going to be slow and what is fast. 
+
+-	In testing, show that stated slow operations are actually slow and vice 
+versa. 
+-	ER Diagram: LIST MORE attributes, the structure is fine. 
+
+-	Reliability: Same as before, DO NOT give out random numbers. Talk about what
+happens when server crashes, how to recover from system errors and crashes. You 
+can say that DB would require external backup. You would never leave the DB in a
+danger state. Think about if something goes wrong, how long does it take to be 
+restored and do you have any lost of data. 
+
+-	Availability: Talk about what does this application needs to be able to
+function in a certain time period. Does the application need to be available in
+24 hours? Mention time for maintenances, example: since this will be used a lot,
+maintenance time will have to be from 2-4 AM. TEAM: The only thing that would affect
+thesystem would be if Pitch’n brings it down but our system itself does not have 
+down time.
+
+-	TA: okay in that case, you can note that that your system does not have its 
+own downtime but downtime could be present when Pitch’n requires it. We are not 
+responsible, it depends how Pitch’n sets up their server. 
+
+-	Change Management: Include factors that we can consider when we decide if we 
+would allow a change. 
+
+-	Add Team Signatures at the end of the last page as agreement between two 
+parties. It’s a not a legal document but think of it as one. 
+
+</code></pre>
+
+<pre><code>Design Phase 
+
+-	Break down into 4 pushes
+-	First Push on Sunday for drafting 
+-	Second Push for High and low level diagrams roughed out. We want to make a complete
+system connection. 
+
+</code></pre>
+
+<p>FOLLOW-UP: Team Meeting Thursday 12:30-2:00 PM. The meeting will be for Yii training</p>
+<p><a href="index.html">Back to Hompage</a></p>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
