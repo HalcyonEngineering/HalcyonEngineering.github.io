@@ -13,4 +13,6 @@ I don't know why I'm here - Andy
 
 Kenneth is ~~not~~ here.
 
-Hey Andy! (March 2, 2014)
+Kenneth got here.
+
+I should be here too now (Mar 2, 2014)
